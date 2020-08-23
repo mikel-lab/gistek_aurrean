@@ -1,0 +1,26 @@
+<div class="col-md-12 mt-3">
+    <h1>{{page_title}}</h1>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">ID de la incidencia</th>
+            <th scope="col">ID del reportador</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Detalles</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let incidencia of incidencias">
+            <th scope="row"></th>
+            <td>{{incidencia.id}}</td>
+            <td>{{incidencia.reportador_id}}</td>
+            <td>{{incidencia.fecha}}</td>
+            <td>{{incidencia.descripcion}}</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+</div>
